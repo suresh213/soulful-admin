@@ -1,7 +1,8 @@
 import './App.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
-import Home from '../Components/Home.js';
+import Home from '../src/Components/Home/Home.js';
+
 function App() {
   return (
     <>
