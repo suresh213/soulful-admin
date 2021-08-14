@@ -1,8 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { Switch, Route, Redirect } from 'react-router-dom';
+import { ConnectedRouter } from 'connected-react-router';
+import Home from '../Components/Home.js';
 function App() {
-  return <div className='App'>New app</div>;
+  return (
+    <>
+      <ConnectedRouter history={history}>
+        <Switch>
+          <Route path='/' component={Home} exact />
+        </Switch>
+      </ConnectedRouter>
+    </>
+  );
 }
 
 export default App;
